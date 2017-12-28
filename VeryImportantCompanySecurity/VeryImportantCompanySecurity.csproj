@@ -36,6 +36,9 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -54,6 +57,21 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Web References\DoorServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\FloorServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WindowServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -89,9 +107,92 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <None Include="Web References\DoorServiceReference\DoorService.wsdl" />
+    <None Include="Web References\DoorServiceReference\DoorService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\DoorServiceReference\DoorService0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\DoorServiceReference\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\FloorServiceReference\FloorService.wsdl" />
+    <None Include="Web References\FloorServiceReference\FloorService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\FloorServiceReference\FloorService0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\FloorServiceReference\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WindowServiceReference\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WindowServiceReference\WindowService.wsdl" />
+    <None Include="Web References\WindowServiceReference\WindowService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\WindowServiceReference\WindowService0.xsd">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost:8080/DoorService">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\DoorServiceReference\</RelPath>
+      <UpdateFromURL>http://localhost:8080/DoorService</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>VeryImportantCompanySecurity_DoorServiceReference_DoorService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:8181/FloorService">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\FloorServiceReference\</RelPath>
+      <UpdateFromURL>http://localhost:8181/FloorService</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>VeryImportantCompanySecurity_FloorServiceReference_FloorService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:8282/WindowService">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WindowServiceReference\</RelPath>
+      <UpdateFromURL>http://localhost:8282/WindowService</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>VeryImportantCompanySecurity_WindowServiceReference_WindowService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\DoorServiceReference\DoorService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\FloorServiceReference\FloorService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\WindowServiceReference\WindowService.disco" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

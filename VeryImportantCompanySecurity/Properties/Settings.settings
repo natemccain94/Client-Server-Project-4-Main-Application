@@ -1,7 +1,15 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="VeryImportantCompanySecurity.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="VeryImportantCompanySecurity_DoorServiceReference_DoorService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:8080/DoorService</Value>
+    </Setting>
+    <Setting Name="VeryImportantCompanySecurity_FloorServiceReference_FloorService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:8181/FloorService</Value>
+    </Setting>
+    <Setting Name="VeryImportantCompanySecurity_WindowServiceReference_WindowService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:8282/WindowService</Value>
+    </Setting>
+  </Settings>
 </SettingsFile>

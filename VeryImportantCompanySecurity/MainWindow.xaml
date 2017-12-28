@@ -5,8 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VeryImportantCompanySecurity"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+        Title="MainWindow" Height="405.342" Width="505.446">
+    <Grid Margin="0,0,5,0">
+        <Button Name="DfButton" Content="DF Status" HorizontalAlignment="Left" Margin="341,27,0,0" VerticalAlignment="Top" Width="75" Click="DfButton_Click" RenderTransformOrigin="0.433,1.8"/>
+        <Button Name="DmButton" Content="DM Status" HorizontalAlignment="Left" Margin="341,160,0,0" VerticalAlignment="Top" Width="75" Click="DmButton_Click"/>
+        <Button Name="W1Button" Content="W1 Status" HorizontalAlignment="Left" Margin="75,307,0,0" VerticalAlignment="Top" Width="75" Click="W1Button_Click"/>
+        <Button Name="W2Button" Content="W2 Status" HorizontalAlignment="Left" Margin="342,307,0,0" VerticalAlignment="Top" Width="74" Click="W2Button_Click"/>
+        <Button Name="FfrButton" Content="FFR Status" HorizontalAlignment="Left" Margin="341,70,0,0" VerticalAlignment="Top" Width="75" Click="FfrButton_Click" RenderTransformOrigin="2.133,0.6"/>
+        <Button Name="FbrButton" Content="FBR Status" HorizontalAlignment="Left" Margin="341,117,0,0" VerticalAlignment="Top" Width="75" Click="FbrButton_Click"/>
+        <Button Name="FfbButton" Content="FFB Status" HorizontalAlignment="Left" Margin="341,204,0,0" VerticalAlignment="Top" Width="75" Click="FfbButton_Click"/>
+        <Button Name="FbbButton" Content="FBB Status" HorizontalAlignment="Left" Margin="341,345,0,0" VerticalAlignment="Top" Width="75" Click="FbbButton_Click"/>
+        <TextBox Name="DfTextbox"  HorizontalAlignment="Left" Height="43" Margin="108,14,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="216"/>
+        <TextBox Name="DmTextbox" HorizontalAlignment="Left" Height="24" Margin="108,156,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="216"/>
+        <TextBox Name="W1Textbox" HorizontalAlignment="Left" Height="23" Margin="10,279,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="216"/>
+        <TextBox Name="W2Textbox" HorizontalAlignment="Left" Height="23" Margin="271,279,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="216"/>
+        <TextBox Name="FfrTextbox" HorizontalAlignment="Left" Height="24" Margin="108,70,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="216"/>
+        <TextBox Name="FbrTextbox" HorizontalAlignment="Left" Height="22" Margin="108,117,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="216"/>
+        <TextBox Name="FfbTextbox" HorizontalAlignment="Left" Height="24" Margin="108,204,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="216"/>
+        <TextBox Name="FbbTextbox" HorizontalAlignment="Left" Height="23" Margin="108,345,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="216"/>
+
     </Grid>
 </Window>
